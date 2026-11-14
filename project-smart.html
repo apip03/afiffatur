@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Smart Irrigation v2 | Afif Fatur Rachman</title>
+  <title>Smart Irrigation Module | Afif Fatur Rachman</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -67,12 +67,12 @@
     <!-- Page Title -->
     <div class="page-title dark-background">
       <div class="container d-lg-flex justify-content-between align-items-center">
-        <h1 class="mb-2 mb-lg-0">Smart Irrigation v2</h1>
+        <h1 class="mb-2 mb-lg-0">Smart Irrigation Module</h1>
         <nav class="breadcrumbs">
           <ol>
             <li><a href="index.html">Home</a></li>
             <li><a href="index.html#portfolio">Portfolio</a></li>
-            <li class="current">Smart Irrigation v2</li>
+            <li class="current">Smart Irrigation Module</li>
           </ol>
         </nav>
       </div>
@@ -107,7 +107,16 @@
               <div class="swiper-wrapper align-items-center">
 
                 <div class="swiper-slide">
-                  <img src="assets/img/projects/smart-diagram.jpg" alt="Smart Irrigation v2" class="img-fluid">
+                  <img src="assets/img/projects/smart-photo.jpg" alt="Smart Irrigation Module" class="img-fluid">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/img/projects/smart-client.jpg" alt="Smart Irrigation Module" class="img-fluid">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/img/projects/water-diagram.jpg" alt="Smart Irrigation Module" class="img-fluid">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/img/projects/smart-diagram.jpg" alt="Smart Irrigation Module" class="img-fluid">
                 </div>
 
               </div>
@@ -131,41 +140,44 @@
             <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
               <h2>Project Overview</h2>
               <p>
-                A learning module that waters a plant automatically: the relay pump turns on whenever soil moisture falls below an adjustable threshold, with a manual override and a 4-page OLED menu.
+                A learning module for plant watering that reads soil moisture and the water tank level, and drives a relay pump. It was delivered in two firmware versions: a timed version that runs the pump for a user-set duration with an on-screen countdown, and an automatic version that waters whenever soil moisture falls below an adjustable threshold.
+              </p>
+              <p>
+                Both versions use a menu on the OLED with push-button navigation, and keep their settings in EEPROM so they survive power loss.
               </p>
 
               <h3 class="mt-4">My Role</h3>
-              <p>Designed the circuit, wired the hardware, wrote the firmware and calibrated the soil moisture sensor.</p>
+              <p>Designed the circuit, wired the hardware, wrote both firmware versions including the menu system and EEPROM storage, calibrated the sensors, and delivered the module to the client.</p>
 
               <div class="features mt-4">
                 <h3>Key Features &amp; Results</h3>
                 <div class="row gy-3">
                   <div class="col-md-6">
                     <div class="feature-item" data-aos="fade-up" data-aos-delay="400">
+                      <i class="bi bi-droplet-half"></i>
+                      <h4>Tank Volume %</h4>
+                      <p>HC-SR04 level calibrated between full (3 cm) and empty (11 cm).</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="500">
                       <i class="bi bi-moisture"></i>
                       <h4>Calibrated Moisture %</h4>
                       <p>Soil sensor mapped between dry (ADC 800) and wet (ADC 300).</p>
                     </div>
                   </div>
                   <div class="col-md-6">
-                    <div class="feature-item" data-aos="fade-up" data-aos-delay="500">
-                      <i class="bi bi-toggle-on"></i>
-                      <h4>Automatic Watering</h4>
-                      <p>Pump ON while moisture is below the threshold (default 50%).</p>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
                     <div class="feature-item" data-aos="fade-up" data-aos-delay="600">
-                      <i class="bi bi-hand-index"></i>
-                      <h4>Manual Override</h4>
-                      <p>Force the pump on from the menu, then return to auto mode.</p>
+                      <i class="bi bi-toggle-on"></i>
+                      <h4>Timed and Automatic Pumping</h4>
+                      <p>Active-LOW relay with a live mm:ss countdown, or automatic watering below the moisture threshold.</p>
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="feature-item" data-aos="fade-up" data-aos-delay="700">
-                      <i class="bi bi-window-stack"></i>
-                      <h4>4-Page OLED Menu</h4>
-                      <p>Home, status, threshold setting and manual pump pages.</p>
+                      <i class="bi bi-menu-button-wide"></i>
+                      <h4>OLED Menu + EEPROM</h4>
+                      <p>Push-button navigation with debounce, long-press and auto-repeat; settings stored in EEPROM.</p>
                     </div>
                   </div>
                 </div>

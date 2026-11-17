@@ -717,19 +717,12 @@ section,
 
 .hero .hero-visual .profile-container {
   position: relative;
-  width: 400px;
-  height: 400px;
+  width: 380px;
+  height: 480px;
 }
 
 .hero .hero-visual .profile-container .profile-background {
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  width: 100%;
-  height: 100%;
-  background: color-mix(in srgb, var(--accent-color), transparent 90%);
-  border-radius: 30px;
-  z-index: 1;
+  display: none;
 }
 
 .hero .hero-visual .profile-container .profile-image {
@@ -737,7 +730,10 @@ section,
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 30px;
+  object-position: center center;
+  border-radius: 28px;
+  border: 2px solid color-mix(in srgb, var(--accent-color), transparent 80%);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.4);
   z-index: 2;
 }
 
@@ -767,35 +763,55 @@ section,
 
 @media (max-width: 992px) {
   .hero .hero-text {
-    text-align: center;
-    margin-bottom: 50px;
+    text-align: left;
+    margin-bottom: 40px;
   }
 
   .hero .hero-text h1 {
-    font-size: 56px;
+    font-size: 52px;
   }
 
   .hero .hero-text h2 {
-    font-size: 28px;
+    font-size: 26px;
   }
 
   .hero .hero-text .lead {
     font-size: 20px;
   }
 
+  .hero .hero-actions {
+    justify-content: flex-start;
+  }
+
+  .hero .social-links {
+    justify-content: flex-start;
+  }
+
+  .hero .hero-visual {
+    justify-content: center;
+    margin-top: 20px;
+  }
+
   .hero .hero-visual .profile-container {
-    width: 350px;
-    height: 350px;
+    width: 320px;
+    height: 420px;
+    max-width: 90%;
+    margin: 0 auto;
   }
 }
 
 @media (max-width: 768px) {
+  .hero .hero-text {
+    text-align: left;
+    margin-bottom: 35px;
+  }
+
   .hero .hero-text h1 {
-    font-size: 42px;
+    font-size: clamp(34px, 8.5vw, 44px);
   }
 
   .hero .hero-text h2 {
-    font-size: 24px;
+    font-size: 22px;
   }
 
   .hero .hero-text .lead {
@@ -803,21 +819,34 @@ section,
   }
 
   .hero .hero-text .description {
-    font-size: 16px;
+    font-size: 15px;
+    max-width: 100%;
   }
 
   .hero .hero-actions {
-    justify-content: center;
+    justify-content: flex-start;
+    gap: 12px;
   }
 
   .hero .hero-actions .btn {
-    padding: 12px 25px;
+    padding: 12px 24px;
     font-size: 14px;
   }
 
+  .hero .social-links {
+    justify-content: flex-start;
+    gap: 15px;
+  }
+
+  .hero .hero-visual {
+    justify-content: center;
+    margin-top: 15px;
+  }
+
   .hero .hero-visual .profile-container {
-    width: 300px;
-    height: 300px;
+    width: 290px;
+    height: 380px;
+    margin: 0 auto;
   }
 
   .hero .background-elements .bg-circle.circle-1 {
@@ -851,13 +880,7 @@ section,
 }
 
 .about .profile-card::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 4px;
-  background: linear-gradient(90deg, var(--accent-color), color-mix(in srgb, var(--accent-color), var(--heading-color) 30%));
+  display: none;
 }
 
 @media (max-width: 991px) {
@@ -1602,6 +1625,15 @@ section,
   object-fit: cover;
 }
 
+.portfolio .portfolio-wrap.contain-img {
+  background-color: #0b1325;
+}
+
+.portfolio .portfolio-wrap.contain-img img {
+  object-fit: contain;
+  background-color: #0b1325;
+}
+
 .portfolio .portfolio-wrap .portfolio-info {
   position: absolute;
   bottom: 0;
@@ -2232,17 +2264,35 @@ section,
 .portfolio-details .portfolio-details-slider {
   position: relative;
   overflow: hidden;
-  border-radius: 8px;
-  box-shadow: 0 0 30px rgba(var(--default-color), 0.1);
+  border-radius: 12px;
+  box-shadow: 0 0 30px rgba(var(--default-color), 0.15);
+  background-color: #0b1325;
 }
 
 .portfolio-details .portfolio-details-slider .swiper-wrapper {
   height: auto !important;
 }
 
+.portfolio-details .portfolio-details-slider .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0b1325;
+}
+
 .portfolio-details .portfolio-details-slider img {
-  aspect-ratio: 16/9;
-  object-fit: cover;
+  width: 100%;
+  max-height: 580px;
+  object-fit: contain;
+  background-color: #0b1325;
+}
+
+.portfolio-details .portfolio-details-slider .swiper-slide a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  cursor: zoom-in;
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination {

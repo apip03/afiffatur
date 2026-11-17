@@ -137,8 +137,14 @@
                 A learning module that detects an approaching object such as a bird with an HC-SR04 ultrasonic sensor and scares it away with a sweeping servo and a buzzer whose pitch follows the distance. Echo time and buzzer frequency are shown live on a 128×32 OLED.
               </p>
 
-              <h3 class="mt-4">My Role</h3>
-              <p>Designed the circuit, wired the hardware, wrote the firmware and tested the module end to end.</p>
+              <h3 class="mt-4">My Role &amp; Responsibilities</h3>
+              <p>Engineered the entire standalone embedded learning module from circuit schematic to firmware and testing:</p>
+              <ul>
+                <li><strong>Circuit Design &amp; Hardware Assembly:</strong> Designed the electronic schematic and hand-soldered the prototype board interfacing the Wemos D1 Mini (ESP8266) with HC-SR04 ultrasonic sensor, SG90 micro servo, piezo buzzer, and I2C OLED display.</li>
+                <li><strong>Non-Blocking Embedded Firmware:</strong> Programmed the complete C++ firmware using non-blocking state machines (millis()) to enable simultaneous ultrasonic echo timing, adaptive buzzer tone generation, and continuous 0&deg;&ndash;180&deg; servo sweeping without latency.</li>
+                <li><strong>Dynamic Frequency Mapping Algorithm:</strong> Formulated the proportional frequency modulation mapping object proximity (2 cm - 50 cm) to deterrent buzzer pitch (200 Hz - 4000 Hz).</li>
+                <li><strong>UI Telemetry &amp; Field Validation:</strong> Programmed a real-time dual-column OLED diagnostic display and calibrated detection thresholds across varied ambient noise conditions.</li>
+              </ul>
 
               <div class="features mt-4">
                 <h3>Key Features &amp; Results</h3>

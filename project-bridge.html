@@ -140,8 +140,14 @@
                 A learning module that measures the load on a model bridge with a load cell and HX711, shows the weight in kilograms on an OLED, and signals the load level with traffic-light LEDs and an overload buzzer.
               </p>
 
-              <h3 class="mt-4">My Role</h3>
-              <p>Designed the circuit, wired the hardware, wrote the firmware and calibrated the load cell.</p>
+              <h3 class="mt-4">My Role &amp; Responsibilities</h3>
+              <p>Developed the complete structural health monitoring module from mechanical sensor calibration to embedded alert firmware:</p>
+              <ul>
+                <li><strong>Sensor Interfacing &amp; Circuit Wiring:</strong> Designed and assembled the instrumentation circuitry interfacing a strain-gauge load cell and 24-bit HX711 ADC with the Wemos D1 Mini microcontroller.</li>
+                <li><strong>Digital Filtering &amp; Load Calibration:</strong> Developed multi-sample averaging and software calibration algorithms (tare compensation and scale-factor adjustment) to ensure accurate weight acquisition down to gram-level resolution.</li>
+                <li><strong>Tiered Multi-Level Alarm Logic:</strong> Programmed 3-stage traffic-light threshold monitoring (Green &lt; 1 kg, Yellow 1&ndash;2 kg, Red &ge; 2 kg) paired with an automated audible overload warning buzzer.</li>
+                <li><strong>Non-Blocking Firmware Architecture:</strong> Implemented non-blocking timing routines for zero-lag sensor polling, instant OLED status refresh, and fault recovery.</li>
+              </ul>
 
               <div class="features mt-4">
                 <h3>Key Features &amp; Results</h3>

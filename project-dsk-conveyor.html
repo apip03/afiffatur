@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Closed-Loop PID Conveyor &amp; Material Sorting System | Afif Fatur Rachman</title>
+  <meta name="description" content="Closed-loop PID DC & AC motor speed control with automated metal sorting conveyor using ATmega328P, Python GUI, and Black Box transfer function modeling.">
+  <meta name="keywords" content="PID Controller, Control System Design, ATmega328P, Python GUI, Black Box System Identification, Transfer Function, Conveyor, ITS">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="portfolio-details-page">
+
+  <header id="header" class="header dark-background d-flex flex-column justify-content-center">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="header-container d-flex flex-column align-items-start">
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html#hero"><i class="bi bi-house navicon"></i>Home</a></li>
+          <li><a href="index.html#about"><i class="bi bi-person navicon"></i> About</a></li>
+          <li><a href="index.html#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+          <li><a href="index.html#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+          <li><a href="index.html#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="social-links text-center">
+        <a href="https://linkedin.com/in/afiffatur" class="linkedin" target="_blank" rel="noopener" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        <a href="https://drive.google.com/drive/folders/1XQpE3AXoUAXFMWgNxPds5E3X4bJaLmcN" class="google-plus" target="_blank" rel="noopener" title="Documents &amp; certificates"><i class="bi bi-google"></i></a>
+        <a href="mailto:afiffr25@gmail.com" class="twitter" title="Email"><i class="bi bi-envelope"></i></a>
+      </div>
+
+    </div>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0">Closed-Loop PID Conveyor &amp; Material Sorting System</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#portfolio">Portfolio</a></li>
+            <li class="current">PID Conveyor &amp; Sorting</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper init-swiper">
+
+              <script type="application/json" class="swiper-config">
+                {
+                  "loop": true,
+                  "speed": 600,
+                  "autoplay": {
+                    "delay": 5000
+                  },
+                  "slidesPerView": "auto",
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "type": "bullets",
+                    "clickable": true
+                  }
+                }
+              </script>
+
+              <div class="swiper-wrapper align-items-center">
+
+                <!-- SLIDE 1: POSTER OVERVIEW -->
+                <div class="swiper-slide">
+                  <a href="assets/img/projects/dsk-poster.jpg" class="glightbox" data-gallery="portfolio-gallery" title="Modul Pembelajaran PID Motor DC &amp; AC - Poster Overview (PJBL 3-18)">
+                    <img src="assets/img/projects/dsk-poster.jpg" alt="Poster Modul Pembelajaran PID Motor DC dan AC" class="img-fluid">
+                  </a>
+                </div>
+
+                <!-- SLIDE 2: REALISASI CONVEYOR & HARDWARE -->
+                <div class="swiper-slide">
+                  <a href="assets/img/projects/dsk-realisasi-conveyor.jpg" class="glightbox" data-gallery="portfolio-gallery" title="Realisasi Fisik Prototipe Conveyor, Panel Kontrol Akrilik, dan Board ATmega328P">
+                    <img src="assets/img/projects/dsk-realisasi-conveyor.jpg" alt="Realisasi Prototipe Conveyor dan Board Kontroler" class="img-fluid">
+                  </a>
+                </div>
+
+                <!-- SLIDE 3: WIRING DIAGRAM SISTEM MOTOR DC -->
+                <div class="swiper-slide">
+                  <a href="assets/img/projects/dsk-wiring-dc.jpg" class="glightbox" data-gallery="portfolio-gallery" title="Wiring Diagram Sistem Motor DC: ATmega328P, L298N, Proximity, Encoder, Servo &amp; OLED">
+                    <img src="assets/img/projects/dsk-wiring-dc.jpg" alt="Wiring Diagram Sistem Kontrol Motor DC" class="img-fluid">
+                  </a>
+                </div>
+
+                <!-- SLIDE 4: PEMODELAN TRANSFER FUNCTION BLACK BOX -->
+                <div class="swiper-slide">
+                  <a href="assets/img/projects/dsk-transfer-function.png" class="glightbox" data-gallery="portfolio-gallery" title="Perhitungan Transfer Function Plant Conveyor dengan Metode Black Box: G(s) = 0.37 / (0.085s + 1)">
+                    <img src="assets/img/projects/dsk-transfer-function.png" alt="Perhitungan Transfer Function Plant Conveyor" class="img-fluid">
+                  </a>
+                </div>
+
+                <!-- SLIDE 5: PERHITUNGAN PARAMETER PID (Kp, Ki) -->
+                <div class="swiper-slide">
+                  <a href="assets/img/projects/dsk-perhitungan-pid.jpg" class="glightbox" data-gallery="portfolio-gallery" title="Perhitungan Matematis Kp dan Ki Berdasarkan Kriteria Waktu Penetapan (Settling Time) &amp; Damping Ratio">
+                    <img src="assets/img/projects/dsk-perhitungan-pid.jpg" alt="Perhitungan Kp dan Ki Motor DC" class="img-fluid">
+                  </a>
+                </div>
+
+                <!-- SLIDE 6: RESPON SISTEM AWAL VS PID PYTHON GUI -->
+                <div class="swiper-slide">
+                  <a href="assets/img/projects/dsk-respon-pid-gui.jpg" class="glightbox" data-gallery="portfolio-gallery" title="Perbandingan Respon Sistem Awal (Open-Loop MATLAB) vs Respon Loop Tertutup Menggunakan PID pada Python GUI">
+                    <img src="assets/img/projects/dsk-respon-pid-gui.jpg" alt="Respon Sistem Motor DC dengan PID" class="img-fluid">
+                  </a>
+                </div>
+
+                <!-- SLIDE 7: RESPON SISTEM DENGAN BEBAN (DISTURBANCE REJECTION) -->
+                <div class="swiper-slide">
+                  <a href="assets/img/projects/dsk-respon-beban.png" class="glightbox" data-gallery="portfolio-gallery" title="Uji Respon Sistem terhadap Gangguan Beban (Load Disturbance Rejection) pada 612g dan 1224g">
+                    <img src="assets/img/projects/dsk-respon-beban.png" alt="Hasil Respon Sistem dengan Beban 612g dan 1224g" class="img-fluid">
+                  </a>
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info" data-aos="fade-left" data-aos-delay="200">
+              <h3>Project Information</h3>
+              <ul>
+                <li><strong>Category</strong>: Control Systems &amp; Embedded Architecture</li>
+                <li><strong>Course</strong>: Desain Sistem Kontrol (PJBL 3-18)</li>
+                <li><strong>Institution</strong>: Teknik Elektro Otomasi - ITS</li>
+                <li><strong>Controller</strong>: ATmega328P + Python Real-Time GUI</li>
+                <li><strong>Plant &amp; Hardware</strong>: DC Conveyor, L298N, Proximity, Encoder, Servo</li>
+                <li><strong>Documentation</strong>: <a href="https://drive.google.com/drive/folders/1XQpE3AXoUAXFMWgNxPds5E3X4bJaLmcN" target="_blank" rel="noopener">Drive folder</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-12">
+            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+              <h2>Project Overview</h2>
+              <p>
+                An industrial-grade automated sorting conveyor testbed implementing closed-loop PID speed control engineered as part of the Control System Design (Desain Sistem Kontrol) course at ITS. The system integrates mathematical plant modeling (Black Box identification), embedded microcontroller firmware on an ATmega328P, and a custom Python desktop GUI for live serial telemetry and PID parameter tuning. An inductive proximity sensor detects passing objects, prompting a high-speed servo mechanism to sort metal and non-metal items seamlessly while the PID algorithm maintains constant conveyor speed under fluctuating load disturbances.
+              </p>
+
+              <h3 class="mt-4">My Role &amp; Responsibilities</h3>
+              <p>Spearheaded system architecture design, theoretical control mathematics, embedded programming, and Python GUI telemetry development:</p>
+              <ul>
+                <li><strong>System Architecture &amp; Electrical Wiring Design:</strong> Formulated the end-to-end hardware architecture and drafted complete wiring schematics interfacing the ATmega328P microcontroller with the L298N motor driver, rotary encoder, inductive proximity sensor, sorting servo, OLED display, and dual power rails.</li>
+                <li><strong>Full-Stack Firmware &amp; Python Telemetry GUI:</strong> Programmed the complete embedded control firmware (C/C++) and built a custom Python desktop GUI via serial FTDI—enabling real-time tuning of $K_p$, $K_i$, and $K_d$ gains, setpoint modification, and live transient response plotting.</li>
+                <li><strong>Mathematical Modeling &amp; Black Box System Identification:</strong> Derived the plant transfer function of the physical conveyor using empirical step-test Black Box modeling ($G(s) = \frac{0.37}{0.085s + 1}$), and calculated exact analytical PI controller parameters ($K_p = 0.99, \tau_i = 0.041$) to meet target settling times ($t_s \le 0.5\text{s}$) and damping ratios ($\zeta = 0.74$).</li>
+                <li><strong>Hardware Implementation &amp; Disturbance Rejection Testing:</strong> Deployed the tuned controller onto the physical plant and executed extensive closed-loop data acquisition, proving steady-state velocity stability under heavy load disturbances (612g and 1224g payloads).</li>
+                <li><strong>Cost Estimation &amp; Bill of Materials (RAB):</strong> Developed the comprehensive Bill of Materials (BOM) and budget expenditure plan (Rencana Anggaran Biaya) for all electromechanical parts, mechanical framing, acrylic paneling, and sensors.</li>
+                <li><strong>Technical Documentation &amp; Reporting:</strong> Co-authored and synthesized the comprehensive engineering report, detailing transfer function derivations, block diagrams, flowchart algorithms, and empirical test analyses.</li>
+              </ul>
+
+              <div class="features mt-4">
+                <h3>Key Features &amp; Control Engineering Outcomes</h3>
+                <div class="row gy-3">
+                  <div class="col-md-6">
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="400">
+                      <i class="bi bi-graph-up-arrow"></i>
+                      <h4>Analytical PID Tuning</h4>
+                      <p>Transfer function modeled via Black Box ($G(s) = \frac{0.37}{0.085s + 1}$) yielding rapid response without excessive overshoot.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="500">
+                      <i class="bi bi-window-desktop"></i>
+                      <h4>Real-Time Python GUI</h4>
+                      <p>Custom desktop interface communicating via FTDI serial for on-the-fly PID gain updates and real-time response curve plotting.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="600">
+                      <i class="bi bi-shield-check"></i>
+                      <h4>Disturbance Rejection Tested</h4>
+                      <p>Conveyor maintained steady-state velocity under severe dynamic load perturbations of 612g and 1224g with minimal error.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="700">
+                      <i class="bi bi-cpu"></i>
+                      <h4>Automated Sorting Logic</h4>
+                      <p>Inductive sensor-driven servo gating reliably segregated metallic vs. non-metallic objects without slowing conveyor throughput.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Details Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Afif Fatur Rachman</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="credits">
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> | <a href="https://bootstrapmade.com/tools/">DevTools</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

@@ -146,8 +146,14 @@
                 Controller gains were first calculated with the Ziegler-Nichols method, then fine-tuned. Both were compared on nominal conditions and on disturbances (base flow increase and decrease).
               </p>
 
-              <h3 class="mt-4">My Role</h3>
-             <p>Designed the ratio control system and determined the PI controller gains in MATLAB/Simulink, comparing Ziegler–Nichols with fine-tuned values. A teammate implemented the selected gains in OpenPLC ladder logic.</p>
+              <h3 class="mt-4">My Role &amp; Responsibilities</h3>
+              <p>Spearheaded control loop modeling, mathematical tuning, and process disturbance analysis in MATLAB/Simulink:</p>
+              <ul>
+                <li><strong>Ratio Control Loop Architecture:</strong> Formulated the mathematical control strategy for closed-loop 4:1 base-to-pigment ratio mixing, specifying flow transmitters (FT) and pneumatic control valve actuators on the P&amp;ID.</li>
+                <li><strong>Ziegler-Nichols &amp; Analytical Tuning:</strong> Determined primary PI controller parameters (Kp = 9.85, Ki = 3.54) via the classic Ziegler-Nichols reaction curve method to establish baseline closed-loop dynamics.</li>
+                <li><strong>Simulink Disturbance Simulation &amp; Fine-Tuning:</strong> Simulated step disturbances (base flow surge and drop) in MATLAB/Simulink to optimize robust gains (Kp = 3.0, Ki = 0.5), eliminating excessive control valve oscillation.</li>
+                <li><strong>PLC Collaboration &amp; Validation:</strong> Collaborated with teammate to translate the verified continuous-domain PI algorithm into OpenPLC ladder logic for hardware-in-the-loop industrial deployment.</li>
+              </ul>
               <div class="features mt-4">
                 <h3>Key Features &amp; Results</h3>
                 <div class="row gy-3">

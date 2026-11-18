@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Distributed IoT Smart Waste Management System | Afif Fatur Rachman</title>
+  <meta name="description" content="Distributed IoT smart waste monitoring and sorting system: ESP32, load cells, ultrasonic sensing, servo lid actuation, and MySQL database across 3 departmental laboratories at ITS.">
+  <meta name="keywords" content="IoT Waste Management, ESP32, Load Cell, HX711, Ultrasonic Sensor, MySQL, phpMyAdmin, Smart Bin, ITS">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="portfolio-details-page">
+
+  <header id="header" class="header dark-background d-flex flex-column justify-content-center">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="header-container d-flex flex-column align-items-start">
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html#hero"><i class="bi bi-house navicon"></i>Home</a></li>
+          <li><a href="index.html#about"><i class="bi bi-person navicon"></i> About</a></li>
+          <li><a href="index.html#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+          <li><a href="index.html#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+          <li><a href="index.html#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="social-links text-center">
+        <a href="https://linkedin.com/in/afiffatur" class="linkedin" target="_blank" rel="noopener" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        <a href="https://drive.google.com/drive/folders/1XQpE3AXoUAXFMWgNxPds5E3X4bJaLmcN" class="google-plus" target="_blank" rel="noopener" title="Documents &amp; certificates"><i class="bi bi-google"></i></a>
+        <a href="mailto:afiffr25@gmail.com" class="twitter" title="Email"><i class="bi bi-envelope"></i></a>
+      </div>
+
+    </div>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0">Distributed IoT Smart Waste Management System</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#portfolio">Portfolio</a></li>
+            <li class="current">Smart Waste System</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper init-swiper">
+
+              <script type="application/json" class="swiper-config">
+                {
+                  "loop": true,
+                  "speed": 600,
+                  "autoplay": {
+                    "delay": 5000
+                  },
+                  "slidesPerView": "auto",
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "type": "bullets",
+                    "clickable": true
+                  }
+                }
+              </script>
+
+              <div class="swiper-wrapper align-items-center">
+
+                <!-- SLIDE 1: PHYSICAL SMART BINS -->
+                <div class="swiper-slide">
+                  <a href="assets/img/projects/waste-bins-cover.jpg" class="glightbox" data-gallery="portfolio-gallery" title="Prototipe Fisik 3 Tempat Sampah Pintar dengan Sensor Ultrasonik pada Tutup dan Kotak Kontroler">
+                    <img src="assets/img/projects/waste-bins-cover.jpg" alt="Prototipe Fisik Smart Waste Bins" class="img-fluid">
+                  </a>
+                </div>
+
+                <!-- SLIDE 2: MULTI-LAB DISTRIBUTED SYSTEM ARCHITECTURE -->
+                <div class="swiper-slide">
+                  <a href="assets/img/projects/waste-architecture.jpg" class="glightbox" data-gallery="portfolio-gallery" title="Arsitektur Sistem IoT Terdistribusi: 3 Stasiun Laboratorium (Lab A, Lab B, Lab C) Terhubung via HTTP ke Data Center">
+                    <img src="assets/img/projects/waste-architecture.jpg" alt="Arsitektur Sistem IoT Smart Waste Terdistribusi" class="img-fluid">
+                  </a>
+                </div>
+
+                <!-- SLIDE 3: ELECTRICAL HARDWARE WIRING DIAGRAM -->
+                <div class="swiper-slide">
+                  <a href="assets/img/projects/waste-wiring.jpg" class="glightbox" data-gallery="portfolio-gallery" title="Wiring Diagram Elektrikal: Antarmuka ESP32-WROOM, 3x HC-SR04, 3x HX711 Load Cell, 3x Servo, Step-Down &amp; Buzzer">
+                    <img src="assets/img/projects/waste-wiring.jpg" alt="Wiring Diagram Elektrikal Smart Waste Bin" class="img-fluid">
+                  </a>
+                </div>
+
+                <!-- SLIDE 4: WEB TELEMETRY DASHBOARD -->
+                <div class="swiper-slide">
+                  <a href="assets/img/projects/waste-dashboard.png" class="glightbox" data-gallery="portfolio-gallery" title="Web Dashboard Telemetri: Pemantauan Total Berat Kategori (Plastik, Kertas, B3), Level Kapasitas, dan Kuantitas Sampah">
+                    <img src="assets/img/projects/waste-dashboard.png" alt="Web Dashboard Waste Management System" class="img-fluid">
+                  </a>
+                </div>
+
+                <!-- SLIDE 5: SYSTEM FLOWCHART -->
+                <div class="swiper-slide">
+                  <a href="assets/img/projects/waste-flowchart.png" class="glightbox" data-gallery="portfolio-gallery" title="Flowchart Operasional Sistem: Deteksi Gambar berbasis Model YOLO, Klasifikasi Sampah, Pembukaan Tutup Servo, Monitoring Kapasitas &amp; Update Database">
+                    <img src="assets/img/projects/waste-flowchart.png" alt="Flowchart Sistem Smart Waste Management dengan Deteksi YOLO" class="img-fluid">
+                  </a>
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info" data-aos="fade-left" data-aos-delay="200">
+              <h3>Project Information</h3>
+              <ul>
+                <li><strong>Category</strong>: Embedded Systems &amp; IoT</li>
+                <li><strong>Scope</strong>: Departmental Scaling (3 Stasiun / Lab A, B, C)</li>
+                <li><strong>AI Vision Model</strong>: YOLO (You Only Look Once) Object Detection</li>
+                <li><strong>Microcontroller</strong>: ESP32-WROOM</li>
+                <li><strong>Sensors &amp; Actuators</strong>: Load Cell + HX711, HC-SR04, Servo, LiDAR</li>
+                <li><strong>Backend &amp; Database</strong>: MySQL (phpMyAdmin), HTTP REST</li>
+                <li><strong>Documentation</strong>: <a href="https://drive.google.com/drive/folders/1XQpE3AXoUAXFMWgNxPds5E3X4bJaLmcN" target="_blank" rel="noopener">Drive folder</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-12">
+            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+              <h2>Project Overview</h2>
+              <p>
+                A distributed IoT-based smart waste sorting and telemetry system developed and replicated for the Department of Electrical Automation Engineering, ITS. Scaling an advanced capstone concept into a multi-node deployment, the project encompasses three identical station sets deployed across three departmental laboratories (Lab A, Lab B, and Lab C). Each station pairs a local camera feed powered by a trained <strong>YOLO (You Only Look Once) deep learning model</strong> for real-time waste object detection and classification (Inorganic, Organic, and Hazardous/B3) with an ESP32-controlled physical unit. Once YOLO identifies the waste category, actuation commands trigger motorized servo lids to open automatically, while continuous ultrasonic sensors track bin fill capacity and precision strain-gauge load cells record disposal weight—streaming empirical telemetry over HTTP to a centralized MySQL database (phpMyAdmin) and real-time monitoring web dashboard.
+              </p>
+
+              <h3 class="mt-4">My Role &amp; Responsibilities</h3>
+              <p>Responsible for electrical architecture engineering, firmware programming, multi-sensor calibration, database architecture, and multi-unit replication:</p>
+              <ul>
+                <li><strong>Electrical Design, Simulation &amp; Embedded Firmware:</strong> Formulated the complete hardware schematic, simulated component interactions, and developed the C/C++ firmware on the ESP32-WROOM to coordinate 3x HC-SR04 ultrasonic sensors, 3x HX711 strain-gauge amplifiers, 3x servo lid mechanisms (triggered upon receiving real-time YOLO vision detection commands), and HTTP data transmission.</li>
+                <li><strong>Multi-Sensor Precision Calibration (Load Cell &amp; Ultrasonic):</strong> Executed rigorous calibration routines for 3x strain-gauge load cells using 24-bit HX711 ADCs with tare compensation to ensure gram-level accuracy, and calibrated lid-mounted ultrasonic sensors to reliably compute container fill volume percentages (0%–100%).</li>
+                <li><strong>Relational Database Architecture (phpMyAdmin / MySQL):</strong> Architected and built the relational MySQL database schema via phpMyAdmin to log real-time multi-variable telemetry (station ID, waste category weight, bin volume percentage, and timestamp) for live web dashboard visualization.</li>
+                <li><strong>Multi-Station Hardware Deployment &amp; Wiring:</strong> Fabricated, hand-wired, and deployed 3 identical functional smart bin stations across Lab A, Lab B, and Lab C, integrating dedicated 12V 7Ah power regulation, DC-DC step-down converters, and robust industrial cable management.</li>
+                <li><strong>Budgeting (RAB) &amp; Technical Reporting:</strong> Formulated the Bill of Materials (BOM) and budget expenditure plan (RAB) for the 3-node scaling, and authored technical documentation detailing wiring schematics, calibration protocols, and communication flowcharts.</li>
+              </ul>
+
+              <div class="features mt-4">
+                <h3>Key Features &amp; Engineering Outcomes</h3>
+                <div class="row gy-3">
+                  <div class="col-md-6">
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="400">
+                      <i class="bi bi-hdd-network"></i>
+                      <h4>3-Node Distributed Deployment</h4>
+                      <p>Successfully replicated and deployed 3 independent station nodes across departmental labs communicating via HTTP to a central server.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="500">
+                      <i class="bi bi-speedometer2"></i>
+                      <h4>Dual Fill &amp; Weight Telemetry</h4>
+                      <p>Ultrasonic fill monitoring (0%–100%) paired with precision load-cell weight tracking per waste category (Inorganic, Organic, B3).</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="600">
+                      <i class="bi bi-database-check"></i>
+                      <h4>Centralized MySQL Logging</h4>
+                      <p>Structured relational database hosted on phpMyAdmin capturing historical disposal trends, capacity warnings, and station health.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="700">
+                      <i class="bi bi-box-arrow-in-up"></i>
+                      <h4>YOLO-Driven Servo Lid Gating</h4>
+                      <p>Automated motorized lid actuation commanded by real-time YOLO object detection to ensure hands-free disposal and prevent category mixing.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Details Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Afif Fatur Rachman</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="credits">
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> | <a href="https://bootstrapmade.com/tools/">DevTools</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
